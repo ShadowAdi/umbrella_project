@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #e0f7fa;
+}
+
+.theme-blue {
+  background: #e7f6fc;
+}
+.theme-pink {
+  background: #fce4ec;
+}
+.theme-yellow {
+  background: #fffde7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.umbrella-preview {
+  position: relative;
+}
+
+#umbrellaImage {
+  max-width: 300px;
+}
+
+#logoPreview {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 60px;
+  transform: translateX(-50%);
+  display: none; /* hidden until logo is uploaded */
+}
+
+.customizer {
+  margin-left: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.swatches {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 12px;
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.heading-text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #202121;
+  margin: 0;
+}
+.heading-2-text {
+  font-size: 20;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+  color: #20252c;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.info p:nth-child(1) {
+  font-size: 14px;
+  color: #0f1c20;
+}
+
+.info p:nth-child(2) {
+  color: #3e494c;
+  font-size: 14px;
+}
+
+.info-p {
+  margin: 0;
+}
+
+.swatch.pink {
+  background: #cf0071;
+  box-shadow: 0 0 0 2px #d13a8f;
+}
+.swatch.blue {
+  background: #00a3de;
+  box-shadow: 0 0 0 2px #7fcff9;
+}
+.swatch.yellow {
+  background: #fcd241;
+  box-shadow: 0 0 0 2px #ffd861;
+}
+
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  background: #00a3e0;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.upload-btn img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.upload-btn > span {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+}
+
+#logoUpload {
+  display: none;
+}
