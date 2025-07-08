@@ -6,12 +6,15 @@ body {
 
 .theme-blue {
   background: #e7f6fc;
+  --primary-color: #00a3e0;
 }
 .theme-pink {
   background: #fce4ec;
+  --primary-color: #cf0071;
 }
 .theme-yellow {
   background: #fffde7;
+  --primary-color: #ffcd3d;
 }
 
 .container {
@@ -107,15 +110,24 @@ body {
   box-shadow: 0 0 0 2px #7fcff9;
 }
 .swatch.yellow {
-  background: #fcd241;
-  box-shadow: 0 0 0 2px #ffd861;
+  background: #fed141;
+  box-shadow: 0 0 0 2px #ffe69b;
 }
 
+.swatch.active.pink {
+  box-shadow: 0 0 0 4px #d13a8f;
+}
+.swatch.active.blue {
+  box-shadow: 0 0 0 4px #7fcff9;
+}
+.swatch.active.yellow {
+  box-shadow: 0 0 0 4px #ffd861;
+}
 
 .upload-btn {
   display: flex;
   align-items: center;
-  background: #00a3e0;
+  background: var(--primary-color);
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;
