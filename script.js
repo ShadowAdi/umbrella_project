@@ -13,7 +13,7 @@ swatches.forEach((swatch) => {
     const color = swatch.dataset.color;
 
     umbrellaImage.style.opacity = "0";
-    loader.querySelector('img').src = `assets/loader_${color}.svg`; // set loader svg
+    loader.querySelector('img').src = `assets/loader_${color}.svg`;
     loader.style.display = "block";
     loader.style.opacity = "1";
 
